@@ -1,6 +1,10 @@
 # Classification_model_using-tensorflow
 This are codes for any classification problem, using tensorflow
 
+# Platform
+
+Anaconda, jupyter notebook
+
 # Notice
 
 I give credit to https://github.com/MicrocontrollersAndMore
@@ -14,14 +18,15 @@ they are pushing to version 2.0 The models are still running in version 1, you w
 2. Download Google flower images
 3. Download your own images
 4. Separate out some test images
-5. Run retrain.ipynb
-6. Run test.ipynb
+5. Run the upload.ipynb, edit it to your file location
+6. Run retrain.ipynb
+7. Run test.ipynb
 
 # Download your own images
 
 If you’d like to use your own images, create a directory “(repository_location)\training_images”, then create a directory for each classification you’d like, then download at least 105 images of each type.
 
-For example, if you’d like to classify road bikes vs mountain bikes, create the directories “(repository_location)\training_images\road_bikes” and “(repository_location)\training_images\mountain_bikes”, then download at least 105 images of each and save them to the applicable directories.
+For example, if you’d like to classify a... vs mountain b..., create the directories “(repository_location)\training_images\...” and “(repository_location)\training_images\....”, then download at least 105 images of each and save them to the applicable directories.
 
 The images can be different sizes, but should be roughly square, and not especially large or small (i.e. substantially bigger than 50 x 50 and substantially smaller than 4000 x 4000).
 
@@ -30,6 +35,13 @@ The retrain.ipynb script we will run in the next few steps may encounter an erro
 # Separate out some test images
 
 Create a directory “(repository_location)\test_images”.  For each of the directories for the classifications in your (repository_location)\training_images directory, choose at least 2 images and move (don’t copy) them into (repository_location)\test_images.  Note that we are separating out the images we will use before training (the next step) so the images we test on will not have been used for training.
+
+# Loading files to jupyter notebook
+
+There are 2 ways to load the files:
+1. Open jupyter notebook and create a file, change it to a name of your liking. Then load the 3 files or codes to your folder (upload.ipynb, retrain.ipynb, test.ipynb). Edit the upload.ipynb to your zipped files (training_images and test_images). Make sure you remove extra folders after extracting. By using the move function in jupyter notebook until you can only click once on the folder and get the intended content.
+2. You can open the C:\Users\name\folder\project folder and literally load the training_images and test_images without using zip files. Run jupyter notebook again. The files will appear.
+
 
 # Run retrain.ipynb
 
