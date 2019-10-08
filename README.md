@@ -26,7 +26,7 @@ they are pushing to version 2.0 The models are still running in version 1, you w
 
 If you’d like to use your own images, create a directory “(repository_location)\training_images”, then create a directory for each classification you’d like, then download at least 105 images of each type.
 
-For example, if you’d like to classify a... vs mountain b..., create the directories “(repository_location)\training_images\...” and “(repository_location)\training_images\....”, then download at least 105 images of each and save them to the applicable directories.
+For example, if you’d like to classify a... vs b..., create the directories “(repository_location)\training_images\...” and “(repository_location)\training_images\....”, then download at least 105 images of each and save them to the applicable directories.
 
 The images can be different sizes, but should be roughly square, and not especially large or small (i.e. substantially bigger than 50 x 50 and substantially smaller than 4000 x 4000).
 
@@ -71,7 +71,7 @@ If you’d like to make the accuracy better, the 2 general steps to accomplish t
 1) Use more training images.  500-1,000 may seem like a lot, but considering the variety of these images, more would be better.  10,000+ images would not be too many.
 2) In retrain.ipynb, set the how_many_training_steps parameter to something higher than 500.  Google’s default is 4000.  This will make the training take longer, however.
 
-The next tutorial will cover how to use the TensorFlow Object Detection API.
+
 
 
 
